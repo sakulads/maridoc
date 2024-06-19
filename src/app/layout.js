@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
       <body>
         <AppRouterCacheProvider>
           <ThemeProvider theme={theme}>
-            <Container maxWidth="xl" sx={{ p: 4 }}>
+            <Container maxWidth="xl" sx={{ }}>
               <Navbar />
               {children}
             </Container>
