@@ -8,16 +8,26 @@ import React from "react";
 export default function Reviews() {
   return (
     <div>
-      <Typography
-        variant="h4"
-        component="h4"
-        align="center"
-        sx={{ color: "#FF6C6C", fontWeight: 500 }}
-      >
-        Відгуки моїх клієнтів
-      </Typography>
+      <div>
+        <Typography
+          gutterBottom
+          align="left"
+          sx={{ color: "#56D4CC", fontWeight: 600, mt: 4 }}
+          variant="body1"
+        >
+          Блог
+        </Typography>
+        <Typography
+          gutterBottom
+          align="left"
+          sx={{ color: "#FF6C6C", fontWeight: 500, mb: 4 }}
+          variant="h5"
+        >
+          Відгуки моїх клієнтів
+        </Typography>
+      </div>
       <Paper
-        elevation={8}
+        elevation={6}
         sx={{
           display: "flex",
           justifyContent: "space-evenly",
@@ -29,7 +39,7 @@ export default function Reviews() {
           mb: 2,
         }}
       >
-        <Box sx={{ width: 300 }}>
+        <Box sx={{ maxWidth: 300 }}>
           <Image src="/review.jpg" width={300} height={150} />
         </Box>
         <Container
@@ -41,12 +51,12 @@ export default function Reviews() {
             flexDirection: "column",
           }}
         >
-          <Typography variant="h6" gutterBottom>
+          <p className="text-lg sm:text-2xl text-justify">
             Раджу всім. Людина з якою приємно працювати, після відвідин занять
             отримав багато специфічного досвіду, став впевненішим у собі.
             Заняття проводяться у доволі легкій, ненав'язливій формі. З часом
             все глибше пізнаю себе та оточуючих.
-          </Typography>
+          </p>
           <Typography variant="h6" color="#FF6C6C" gutterBottom>
             Ігор П.
           </Typography>

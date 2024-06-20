@@ -45,11 +45,7 @@ export default function Gallery() {
           <img className="image" src="/diplom8.jpg" alt="" />
           <div className={styles.image_details}></div>
         </div>
-        <div className={styles.media}>
-          <div className={styles.overlay}></div>
-          <img className="image" src="/diplom9.jpg" alt="" />
-          <div className={styles.image_details}></div>
-        </div>
+       
       </div>
     </>
   );

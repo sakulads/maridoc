@@ -1,6 +1,7 @@
 import React from "react";
 import Person from "@/components/Person";
 import { Typography } from "@mui/material";
+import Gallery from "./Gallery/Gallery";
 
 function CardList() {
   const persons = [
@@ -70,15 +71,24 @@ function CardList() {
   ];
   return (
     <div className="max-w-screen-xl mx-auto">
-      <Typography
-        variant="h4"
-        component="h4"
-        align="center"
-        gutterBottom
-        sx={{ color: "#FF6C6C", fontWeight: 500, mt: 4, mb: 4 }}
-      >
-        Скільки коштує консультація?
-      </Typography>
+      <div>
+        <Typography
+          gutterBottom
+          align="left"
+          sx={{ color: "#56D4CC", fontWeight: 600, mt: 6 }}
+          variant="body1"
+        >
+          Прайс
+        </Typography>
+        <Typography
+          gutterBottom
+          align="left"
+          sx={{ color: "#FF6C6C", fontWeight: 500, mb: 6 }}
+          variant="h5"
+        >
+          Скільки коштує консультація?
+        </Typography>
+      </div>
       <div className="flex flex-row justify-evenly gap-y-12 gap-x-8 flex-wrap items-stretch">
         {persons.map((person) => {
           return (
