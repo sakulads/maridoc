@@ -19,10 +19,12 @@ body {
     )
     rgb(var(--background-start-rgb));
 } */
-
+body {
+  padding: 0;
+  margin: 0;
+}
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
 }
-

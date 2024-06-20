@@ -28,26 +28,21 @@ export default function Reviews() {
       </div>
       <Paper
         elevation={6}
-        sx={{
-          display: "flex",
-          justifyContent: "space-evenly",
-          alignItems: "center",
-          flexDirection: "row",
-          mt: 2,
-          p: 2,
-          borderRadius: 4,
-          mb: 2,
-        }}
+        className="flex rounded-lg flex-col md:flex-row justify-center align-middle items-center mb-4"
       >
-        <Box sx={{ maxWidth: 300 }}>
-          <Image src="/review.jpg" width={300} height={150} />
-        </Box>
+        <div className="max-w-fit md:p-8 p-4 ">
+          <Image
+            className="md:max-w-full  md:w-full "
+            src="/review.jpg"
+            width={300}
+            height={150}
+          />
+        </div>
         <Container
           sx={{
             maxWidth: "100%",
             width: 800,
             display: "flex",
-            flexWrap: "wrap",
             flexDirection: "column",
           }}
         >
