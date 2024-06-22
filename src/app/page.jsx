@@ -20,17 +20,17 @@ export default function Home() {
         </Typography>
         <div>
           <p className="text-lg mt-4">
-            <span className="text-[#FF6C6C] text-xl text">
+            <span className="text-[#FF6C6C] text-lg md:text-xl text-justify whitespace-break-spaces">
               Мене звати Марина Зеленська. Я - практикуючий психолог,
               консультант, психотерапевт.
             </span>
           </p>
-          <p className="text-lg prose">
+          <p className="mt-2 text-md text-justify whitespace-break-spaces md:text-lg">
             Маю великий досвід роботи з різними клієнтськими запитами. Мій
             досвід у психології становить понад 10 років. Індивідуальні
             консультації я почала проводити близько 9 років тому.
           </p>
-          <p className="text-lg">
+          <p className="text-md text-justify whitespace-break-spaces md:text-lg">
             Зараз я проводжу десятки консультацій щомісяця. У мене достатньо
             знань і досвіду, щоб допомогти Вам вирішити Ваше питання або знайти
             вихід із будь-якої ситуації. Якщо Вам потрібна професійна
@@ -43,7 +43,7 @@ export default function Home() {
             змінити своє життя і вирішити питання, що накопичилися -
             звертайтеся!
           </p>
-          <p className="text-[#FF6C6C] mt-4 text-xl">
+          <p className="text-[#FF6C6C] mt-2 text-lg md:text-xl">
             Буду рада стати Вам корисною!
           </p>
         </div>

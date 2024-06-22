@@ -1,13 +1,11 @@
 "use client";
-import { Box, Container, Paper, Typography } from "@mui/material";
-import { red } from "@mui/material/colors";
-import { wrap } from "framer-motion";
+import { Paper, Typography } from "@mui/material";
 import Image from "next/image";
 import React from "react";
 
 export default function Reviews() {
   return (
-    <div>
+    <div className="pt-10">
       <Typography
         variant="h4"
         component="h4"
@@ -16,41 +14,29 @@ export default function Reviews() {
       >
         Відгуки моїх клієнтів
       </Typography>
-      <Paper
+      <div
         elevation={8}
-        sx={{
-          display: "flex",
-          justifyContent: "space-evenly",
-          alignItems: "center",
-          flexDirection: "row",
-          mt: 2,
-          p: 2,
-          borderRadius: 4,
-          mb: 2,
-        }}
+        className="pt-4 flex flex-col justify-evenly items-center md:max-w-screen-xl md:gap-16 text-lg md:flex-row mx-auto shadow-2xl rounded-r-2xl"
       >
-        <Box sx={{ width: 300 }}>
-          <Image src="/review.jpg" width={300} height={150} />
-        </Box>
-        <div
-          sx={{
-            display: "flex",
-            flexWrap: "wrap",
-            flexDirection: "row",
-          }}
-        >
-          <Typography variant="h6">
+        <div className="flex md:h-fit">
+          <Image
+            className="max-w-screen-lg md:max-w-max md:p-4"
+            src="/review.jpg"
+            width={300}
+            height={300}
+          />
+        </div>
+        <div className="p-4 flex flex-col justify-center items-start">
+          <div className="md:text-lg text-base p-2 text-justify whitespace-break-spaces">
             Раджу всім. Людина з якою приємно працювати, після відвідин занять
             отримав багато специфічного досвіду, став впевненішим у собі.
             Заняття проводяться у доволі легкій, ненав'язливій формі. З часом
             все глибше пізнаю себе та оточуючих.
-          </Typography>
-          <Typography variant="h6" color="#FF6C6C">
-            Ігор П.
-          </Typography>
-          <Typography variant="body1">Київ, 16 років.</Typography>
+          </div>
+          <span className="text-[#FF6C6C] text-xl px-2">Ігор П.</span>
+          <span className="text-lg px-2">Київ, 16 років.</span>
         </div>
-      </Paper>
+      </div>
     </div>
   );
 }
