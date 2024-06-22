@@ -32,26 +32,24 @@ export default function Reviews() {
         <Box sx={{ width: 300 }}>
           <Image src="/review.jpg" width={300} height={150} />
         </Box>
-        <Container
+        <div
           sx={{
-            maxWidth: "100%",
-            width: 800,
             display: "flex",
             flexWrap: "wrap",
-            flexDirection: "column",
+            flexDirection: "row",
           }}
         >
-          <Typography variant="h6" gutterBottom>
+          <Typography variant="h6">
             Раджу всім. Людина з якою приємно працювати, після відвідин занять
             отримав багато специфічного досвіду, став впевненішим у собі.
             Заняття проводяться у доволі легкій, ненав'язливій формі. З часом
             все глибше пізнаю себе та оточуючих.
           </Typography>
-          <Typography variant="h6" color="#FF6C6C" gutterBottom>
+          <Typography variant="h6" color="#FF6C6C">
             Ігор П.
           </Typography>
           <Typography variant="body1">Київ, 16 років.</Typography>
-        </Container>
+        </div>
       </Paper>
     </div>
   );
