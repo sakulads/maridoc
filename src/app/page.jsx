@@ -14,7 +14,7 @@ export default function Home() {
           component="h4"
           align="center"
           sx={{ color: "#FF6C6C", fontWeight: 500 }}
-          className="text-center text-3xl font-semibold "
+          className="text-center text-3xl font-semibold"
         >
           Вітаю Вас на моєму сайті!
         </Typography>
