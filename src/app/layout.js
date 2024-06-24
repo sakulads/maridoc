@@ -6,6 +6,7 @@ import { Container } from "@mui/material";
 import Head from "next/head";
 import "./globals.css";
 import Footer from "@/components/Footer";
+import Nav from "@/components/nav/nav";
 
 export const metadata = {
   title: "Create Next App",
@@ -21,8 +22,8 @@ export default function RootLayout({ children }) {
       <body>
         <AppRouterCacheProvider>
           <ThemeProvider theme={theme}>
-            <div maxWidth="xl" sx={{ p: 0 }}>
-              <Navbar />
+              <Nav />
+            <div>
               {children}
             </div>
             <Footer />
