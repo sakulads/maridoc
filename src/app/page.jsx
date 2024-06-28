@@ -7,7 +7,7 @@ import { Container, Typography } from "@mui/material";
 export default function Home() {
   return (
     <main>
-      <Container maxWidth="xl">
+      <div className="max-w-screen-xl mx-auto px-6">
         <Hero />
         <Typography
           variant="h4"
@@ -50,7 +50,7 @@ export default function Home() {
         <Reviews />
         <Diploms />
         <CardList />
-      </Container>
+      </div>
     </main>
   );
 }

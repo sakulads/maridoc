@@ -53,7 +53,7 @@ const Nav = () => {
 
   return (
     <header>
-      <nav className="flex justify-between items-center py-8 lg:py-4 px-10">
+      <nav className="w-full mx-auto flex justify-between items-center py-8 lg:py-4 px-10">
         <div className="flex items-center gap-[1ch]">
           <div className="w-5 h-5 bg-gray-400 rounded-full" />
           <span className="text-sm font-semibold tracking-widest">MARIDOC</span>
